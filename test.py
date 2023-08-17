@@ -1,7 +1,3 @@
-# import statements
-import pandas as pd
-import numpy as np
-
 # file paths
 # file_path = "data/salaries.csv"
 #
