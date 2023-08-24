@@ -20,3 +20,4 @@ data = [go.Scatter(x=df2.columns,
                    name=name) for name in df2.index]
 
 pyo.plot(data)
+
