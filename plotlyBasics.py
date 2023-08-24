@@ -25,4 +25,5 @@ layout = go.Layout(title='First Scatter Plot',
                    hovermode='closest')
 
 fig = go.Figure(data=data, layout=layout)
+
 pyo.plot(fig, filename='scatter.html')
