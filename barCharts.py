@@ -18,6 +18,6 @@ trace3 = go.Bar(x=df['NOC'], y=df['Bronze'], name='Bronze', marker={'color': '#C
 
 data = [trace1, trace2, trace3]
 
-layout = go.Layout(title='Medals', barmode='stack')
+layout = go.Layout(title="Medals", barmode='stack')
 fig = go.Figure(data=data, layout=layout)
 pyo.plot(fig)
