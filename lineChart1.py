@@ -17,7 +17,7 @@ trace1 = go.Scatter(x=x_values, y=y_values,
 
 trace2 = go.Scatter(x=x_values, y=y_values-5,
                    mode='lines+markers', name='lines and markers')
-data = [trace0,trace1,trace2]
+data = [trace0, trace1, trace2]
 
 layout = go.Layout(title='Line Charts')
 
