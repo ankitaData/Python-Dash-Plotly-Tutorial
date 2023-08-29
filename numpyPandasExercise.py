@@ -19,12 +19,10 @@
 import pandas as pd
 import numpy as np
 
-
 #######
 # TASK 2: Set Numpy's random number generator seed to 101
 ######
 np.random.seed(101)
-
 
 #######
 # TASK 3: Create a NumPy Matrix of 100 rows by 5 columns consisting of
@@ -32,7 +30,7 @@ np.random.seed(101)
 #         limit may be exclusive.)
 ######
 
-mat = np.random.randint(1,101,(100,5))
+mat = np.random.randint(1, 101, (100, 5))
 # print(mat)
 
 #######
@@ -43,15 +41,13 @@ mat = np.random.randint(1,101,(100,5))
 
 df = pd.DataFrame(data=mat)
 
-
 #######
 # TASK 5: Using your previously created DataFrame, use [df.columns = [...]]
 #         (https://stackoverflow.com/questions/11346283/renaming-columns-in-pandas)
 #         to rename the pandas columns to be ['f1','f2','f3','f4','label'].
 ######
-df.columns = ['f1','f2','f3','f4','label']
+df.columns = ['f1', 'f2', 'f3', 'f4', 'label']
 print(df)
-
 
 #######
 # TASK 6: Alright, all the other tasks were hopefully straightforward.
@@ -63,7 +59,7 @@ print(df)
 #         it in to pd.DataFrame(), check out the data= and index= parameters
 #         for that call.)
 
-random_num = np.random.randint(0,100, 200)
-new_mat = random_num.reshape(50,4)
-new_df = pd.DataFrame(data=new_mat, columns=['A','B','C','D'])
+random_num = np.random.randint(0, 100, 200)
+new_mat = random_num.reshape(50, 4)
+new_df = pd.DataFrame(data=new_mat, columns=['A', 'B', 'C', 'D'])
 print(new_df)
