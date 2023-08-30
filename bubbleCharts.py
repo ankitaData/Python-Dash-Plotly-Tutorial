@@ -12,11 +12,10 @@ pd.set_option('display.max_columns', 9)
 print(df.head())
 
 data = [go.Scatter(x=df['horsepower'],
-                  y=df['mpg'],
-                  text=df['name'],
-                  mode='markers',
-                  marker=dict(size=df['weight']/300, color=df['cylinders'], showscale=True))]
-
+                   y=df['mpg'],
+                   text=df['name'],
+                   mode='markers',
+                   marker=dict(size=df['weight'] / 300, color=df['cylinders'], showscale=True))]
 
 layout = go.Layout(title="Bubble Chart: Horsepower vs MPG",
                    xaxis=dict(title='Horsepower'),
